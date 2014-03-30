@@ -1,12 +1,55 @@
-@import "normalize";
-
 $sans-serif: 'PT Sans', sans-serif;
 $serif: 'PT Serif', serif;
 
+$light: #90E3FF;
+$mid: #34CDFF;
+$dark: #1181A6;
+
+* {
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
 body {
 	font-family: $serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $sans-serif;
+	text-transform: lowercase;
+	color: $dark;
+}
+
+%clearfix {
+	*zoom: 1;
+
+	&:after {
+		clear: both;
+	}
+
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+}
+
+@import "normalize";
+
+// Social buttons
+@import "social-buttons";
+.social-buttons {
+	display: block;
+	list-style: none;
+
+	li {
+		display: inline-block;
+
+		a {
+			background-color: white;
+		}
+
+		.text {
+			margin-left: 0.5em;
+		}
+	}
 }
