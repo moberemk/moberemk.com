@@ -595,6 +595,7 @@ table {
       .social-buttons li a:hover .text, .social-buttons li a:hover .icon {
         color: white; }
         .social-buttons li a:hover .text path, .social-buttons li a:hover .text polygon, .social-buttons li a:hover .icon path, .social-buttons li a:hover .icon polygon {
+          stroke: white;
           fill: white; }
       .social-buttons li a:active {
         box-shadow: inset 1px 3px 15px 0 rgba(22, 0, 0, 0.25); }
@@ -711,21 +712,25 @@ table {
     .social-buttons li .text {
       margin-left: 0.5em; }
 
-.header {
-  min-height: 100vh;
+section,
+header,
+footer {
+  min-height: 100vh; }
+
+header {
   padding-top: 30vh;
   padding-bottom: 0;
   padding-left: 2vw;
   padding-right: 2vw;
   color: white;
   background-color: #1181a6; }
-  .header h1, .header h2 {
+  header h1, header h2 {
     color: white;
     line-height: 1.15em;
     margin: 0; }
-  .header h1 {
+  header h1 {
     font-size: 10em; }
-  .header h2 {
+  header h2 {
     font-size: 4em; }
 
 /*# sourceMappingURL=style.min.css.map */
