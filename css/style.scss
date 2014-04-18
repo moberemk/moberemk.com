@@ -3,14 +3,14 @@ $serif: 'PT Serif', serif;
 
 $blue-light: #5995A8;
 $blue-mid: #1181A6;
-$blue-dark: #286073;
+$blue-dark: #082E3A;
 
 $yellow-light: #ffcb4d;
-$yellow-mid: #ffb911;
+$yellow-mid: #F5AF1A;
 $yellow-dark: #A67706;
 
 $red-light: #FF684D;
-$red-mid: #FF3611;
+$red-mid: #DD3C1F;
 $red-dark: #A6E106;
 
 $green-light: #43DF78;
@@ -19,18 +19,32 @@ $green-dark: #047C2D;
 
 $white: #FFFFFF;
 
+%clearfix {
+	&:before,
+	&:after {
+		content: " ";
+	    display: table;
+	}
+
+	&:after {
+	    clear: both;
+	}
+}
+
+
+
 * {
 	-moz-box-sizing:border-box;
 	box-sizing: border-box;
 }
 body {
-	font-family: $serif;
+	font-family: $sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $sans-serif;
 	text-transform: lowercase;
-	color: $blue-mid;
+	// color: $blue-mid;
 }
 
 %clearfix {
@@ -70,14 +84,13 @@ h1, h2, h3, h4, h5, h6 {
 
 // Header
 section,
-header,
-footer {
+header {
 	min-height: 100vh;
 }
 header {
 	padding: {
 		top: 30vh;
-		bottom: 0;
+		bottom: 2vh;
 		left: 2vw;
 		right: 2vw;
 	}
@@ -96,4 +109,72 @@ header {
 		font-size: 4em;
 	}
 }
+.skills {
+	@extend %clearfix;
 
+	margin: 0;
+	padding: 0;
+
+	.skillset {
+		width: 25em;
+		max-width: 100%;
+		float: left;
+		list-style: none;
+		padding: 0.5em;
+
+		h5 {
+			margin-top: 0;
+			margin-bottom: 0.25em;
+		}
+	}
+}
+
+// Sections
+.who,
+.now,
+.then,
+footer {
+	background-color: $white;
+	color: black;
+	padding: {
+		top: 5vh;
+		bottom: 5vh;
+		left: 2vw;
+		right: 2vw;
+	}
+}
+
+.who {
+	color: $white;
+	background-color: $green-mid;
+}
+.now {
+	background-color: $red-mid;
+	color: $white;
+}
+.then {
+	background-color: $yellow-mid;
+	color: $white;
+}
+
+.pull-text {
+	font-size: 10em;
+	text-transform: lowercase;
+	float: left;
+	font-weight: bold;
+	margin-left: -1em;
+}
+section .content {
+	padding-left: 10em;
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+footer {
+	color: $white;
+	background-color: $blue-dark;
+}
+
+.copyright {
+	font-size: 0.8em;
+}

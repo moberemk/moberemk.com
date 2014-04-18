@@ -1,20 +1,25 @@
+.social-buttons:before, .skills:before, .social-buttons:after, .skills:after {
+  content: " ";
+  display: table; }
+.social-buttons:after, .skills:after {
+  clear: both; }
+
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
-  font-family: "PT Serif", serif; }
+  font-family: "PT Sans", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", sans-serif;
-  text-transform: lowercase;
-  color: #1181a6; }
+  text-transform: lowercase; }
 
-.social-buttons {
+.social-buttons, .skills {
   *zoom: 1; }
-  .social-buttons:after {
+  .social-buttons:after, .skills:after {
     clear: both; }
-  .social-buttons:before, .social-buttons:after {
+  .social-buttons:before, .skills:before, .social-buttons:after, .skills:after {
     content: " ";
     display: table; }
 
@@ -256,7 +261,8 @@ dl,
 menu,
 ol,
 ul {
-  margin: 1em 0; }
+  margin: 1em 0;
+  margin-top: 0; }
 
 dd {
   margin: 0 0 0 40px; }
@@ -713,13 +719,12 @@ table {
       margin-left: 0.5em; }
 
 section,
-header,
-footer {
+header {
   min-height: 100vh; }
 
 header {
   padding-top: 30vh;
-  padding-bottom: 0;
+  padding-bottom: 2vh;
   padding-left: 2vw;
   padding-right: 2vw;
   color: white;
@@ -732,5 +737,60 @@ header {
     font-size: 10em; }
   header h2 {
     font-size: 4em; }
+
+.skills {
+  margin: 0;
+  padding: 0; }
+  .skills .skillset {
+    width: 25em;
+    max-width: 100%;
+    float: left;
+    list-style: none;
+    padding: 0.5em; }
+    .skills .skillset h5 {
+      margin-top: 0;
+      margin-bottom: 0.25em; }
+
+.who,
+.now,
+.then,
+footer {
+  background-color: white;
+  color: black;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 2vw;
+  padding-right: 2vw; }
+
+.who {
+  color: white;
+  background-color: #0dbf49; }
+
+.now {
+  background-color: #dd3c1f;
+  color: white; }
+
+.then {
+  background-color: #f5af1a;
+  color: white; }
+
+.pull-text {
+  font-size: 10em;
+  text-transform: lowercase;
+  float: left;
+  font-weight: bold;
+  margin-left: -1em; }
+
+section .content {
+  padding-left: 10em;
+  max-width: 50em;
+  margin: 0 auto; }
+
+footer {
+  color: white;
+  background-color: #082e3a; }
+
+.copyright {
+  font-size: 0.8em; }
 
 /*# sourceMappingURL=style.min.css.map */
