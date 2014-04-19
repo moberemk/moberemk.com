@@ -2,7 +2,7 @@ $sans-serif: 'PT Sans', sans-serif;
 $serif: 'PT Serif', serif;
 
 $blue-light: #5995A8;
-$blue-mid: #1181A6;
+$blue-mid: #025f71;
 $blue-dark: #082E3A;
 
 $yellow-light: #ffcb4d;
@@ -98,6 +98,8 @@ header {
 	}
 	color: $white;
 	background-color: $blue-mid;
+	// background-image: url(../img/mountains_edited.jpg);
+	// background-size: cover;
 
 	h1, h2 {
 		color: $white;
