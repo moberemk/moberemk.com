@@ -15,6 +15,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", sans-serif;
   text-transform: lowercase; }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted white; }
+
 .social-buttons, .skills {
   *zoom: 1; }
   .social-buttons:after, .skills:after {
@@ -725,18 +730,34 @@ header {
 header {
   padding-top: 30vh;
   padding-bottom: 2vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
   color: white;
   background-color: #1181a6; }
   header h1, header h2 {
     color: white;
     line-height: 1.15em;
     margin: 0; }
-  header h1 {
-    font-size: 10em; }
-  header h2 {
-    font-size: 4em; }
+  @media (max-width: 559px) {
+    header h1 {
+      font-size: 2.75em; }
+    header h2 {
+      font-size: 1.1em; } }
+  @media (min-width: 560px) and (max-width: 829px) {
+    header h1 {
+      font-size: 5em; }
+    header h2 {
+      font-size: 2em; } }
+  @media (min-width: 830px) and (max-width: 1099px) {
+    header h1 {
+      font-size: 7.5em; }
+    header h2 {
+      font-size: 3em; } }
+  @media (min-width: 1100px) {
+    header h1 {
+      font-size: 10em; }
+    header h2 {
+      font-size: 4em; } }
 
 .skills {
   margin: 0;
@@ -759,12 +780,20 @@ footer {
   color: black;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  padding-left: 2vw;
-  padding-right: 2vw; }
+  padding-left: 4vw;
+  padding-right: 4vw; }
+  .who ul, .who ol,
+  .now ul,
+  .now ol,
+  .then ul,
+  .then ol,
+  footer ul,
+  footer ol {
+    padding-left: 0; }
 
 .who {
   color: white;
-  background-color: #0dbf49; }
+  background-color: #2f990e; }
 
 .now {
   background-color: #dd3c1f;
@@ -777,14 +806,19 @@ footer {
 .pull-text {
   font-size: 10em;
   text-transform: lowercase;
-  float: left;
   font-weight: bold;
-  margin-left: -1em; }
+  line-height: 1em; }
+  @media (min-width: 600px) {
+    .pull-text {
+      float: left;
+      margin-left: -1em; } }
 
 section .content {
-  padding-left: 10em;
   max-width: 50em;
   margin: 0 auto; }
+  @media (min-width: 600px) {
+    section .content {
+      padding-left: 10em; } }
 
 footer {
   color: white;
