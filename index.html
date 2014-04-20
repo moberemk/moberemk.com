@@ -10,15 +10,24 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="page">
             <h1>moberemk.com</h1>
             <h2>The Life and Times of Mark P. Oberemk</h2>
             <!--[if lt IE 9]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
+            Need to implement a color-changing effect on scroll here
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item who"><a href="#who" title="">Who I Am</a></li>
+                    <li class="navbar-item now"><a href="#now" title="">What I'm Doing</a></li>
+                    <li class="navbar-item then"><a href="#then" title="">What I've Done</a></li>
+                    <li class="navbar-item where"><a href="#where" title="">Where I Am</a></li>
+                </ul>
+            </nav>
         </header>
         <div class="content">
-            <section class="who">
+            <section class="page who" id="who">
                 <div class="content">
                     <div class="pull-text">Hi</div>
                     <h3>I'm a web developer</h3>
@@ -68,7 +77,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="now">
+            <section class="page now" id="now">
                 <div class="content">
                     <h3>Here's some cool stuff I've been doing</h3>
                     <ul class="projects">
@@ -96,7 +105,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="then">
+            <section class="page then" id="then">
                 <div class="content">
                     <h3>Here's some cool stuff I've done</h3>
                     <ul class="projects">
@@ -132,7 +141,7 @@
                 </div>
             </section>
         </div>
-        <footer>
+        <footer class="page where" id="where">
             <h3>You can find me pretty much everywhere</h3>
             <ul class="social-buttons">
                 <li class="email">

@@ -2,7 +2,7 @@ $sans-serif: 'PT Sans', sans-serif;
 $serif: 'PT Serif', serif;
 
 $blue-light: #5995A8;
-$blue-mid: #025f71;
+$blue-mid: #18508D;
 $blue-dark: #082E3A;
 
 $yellow-light: #ffcb4d;
@@ -85,16 +85,21 @@ a {
 }
 
 // Header
-section,
-header {
+.page {
 	min-height: 100vh;
+
+	padding: {
+		top: 5vh;
+		bottom: 5vh;
+		left: 4vw;
+		right: 4vw;
+	}
+
 }
-header {
+header.page {
 	padding: {
 		top: 30vh;
 		bottom: 2vh;
-		left: 4vw;
-		right: 4vw;
 	}
 	color: $white;
 	background-color: $blue-mid;
@@ -163,19 +168,40 @@ header {
 	}
 }
 
+.navbar {
+	@extend %clearfix;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	border-bottom: 1px solid $white;
+
+	background-color: $blue-mid;
+}
+.navbar-list {
+	float: right;
+	padding: 0;
+	margin: 0;
+
+	.navbar-item {
+		float: left;
+
+		a {
+			display: inline-block;
+			padding: 0.75em 1.5em;
+			border-left: 1px solid $white;
+			border-bottom: none;
+		}
+	}
+}
+
 // Sections
 .who,
 .now,
 .then,
 footer {
-	background-color: $white;
-	color: black;
-	padding: {
-		top: 5vh;
-		bottom: 5vh;
-		left: 4vw;
-		right: 4vw;
-	}
+	color: $white;
 
 	ul, ol {
 		padding-left: 0;
@@ -183,16 +209,13 @@ footer {
 }
 
 .who {
-	color: $white;
 	background-color: $green-mid;
 }
 .now {
 	background-color: $red-mid;
-	color: $white;
 }
 .then {
 	background-color: $yellow-mid;
-	color: $white;
 }
 
 .pull-text {
@@ -215,8 +238,7 @@ section .content {
 	}
 }
 
-footer {
-	color: $white;
+.where {
 	background-color: $blue-dark;
 }
 
