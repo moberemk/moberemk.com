@@ -494,70 +494,70 @@ table {
     margin: 0;
     padding: 0 2.5px; }
     .social-buttons li.email a {
-      border: 0.1em solid #0a88ff;
+      border: none;
       color: #0a88ff; }
       .social-buttons li.email a path, .social-buttons li.email a polygon {
         fill: #0a88ff; }
       .social-buttons li.email a:hover {
         background-color: #0a88ff; }
     .social-buttons li.facebook a {
-      border: 0.1em solid #306199;
+      border: none;
       color: #306199; }
       .social-buttons li.facebook a path, .social-buttons li.facebook a polygon {
         fill: #306199; }
       .social-buttons li.facebook a:hover {
         background-color: #306199; }
     .social-buttons li.tumblr a {
-      border: 0.1em solid #32506d;
+      border: none;
       color: #32506d; }
       .social-buttons li.tumblr a path, .social-buttons li.tumblr a polygon {
         fill: #32506d; }
       .social-buttons li.tumblr a:hover {
         background-color: #32506d; }
     .social-buttons li.linkedin a {
-      border: 0.1em solid #007bb6;
+      border: none;
       color: #007bb6; }
       .social-buttons li.linkedin a path, .social-buttons li.linkedin a polygon {
         fill: #007bb6; }
       .social-buttons li.linkedin a:hover {
         background-color: #007bb6; }
     .social-buttons li.twitter a {
-      border: 0.1em solid #26c4f1;
+      border: none;
       color: #26c4f1; }
       .social-buttons li.twitter a path, .social-buttons li.twitter a polygon {
         fill: #26c4f1; }
       .social-buttons li.twitter a:hover {
         background-color: #26c4f1; }
     .social-buttons li.googleplus a {
-      border: 0.1em solid #e93f2e;
+      border: none;
       color: #e93f2e; }
       .social-buttons li.googleplus a path, .social-buttons li.googleplus a polygon {
         fill: #e93f2e; }
       .social-buttons li.googleplus a:hover {
         background-color: #e93f2e; }
     .social-buttons li.youtube a {
-      border: 0.1em solid #df1c31;
+      border: none;
       color: #df1c31; }
       .social-buttons li.youtube a path, .social-buttons li.youtube a polygon {
         fill: #df1c31; }
       .social-buttons li.youtube a:hover {
         background-color: #df1c31; }
     .social-buttons li.reddit a {
-      border: 0.1em solid #8bbbe3;
+      border: none;
       color: #8bbbe3; }
       .social-buttons li.reddit a path, .social-buttons li.reddit a polygon {
         fill: #8bbbe3; }
       .social-buttons li.reddit a:hover {
         background-color: #8bbbe3; }
     .social-buttons li.pinterest a {
-      border: 0.1em solid #b81621;
+      border: none;
       color: #b81621; }
       .social-buttons li.pinterest a path, .social-buttons li.pinterest a polygon {
         fill: #b81621; }
       .social-buttons li.pinterest a:hover {
         background-color: #b81621; }
     .social-buttons li.github a {
-      border: 0.1em solid #444444;
+      border: none;
       color: #444444; }
       .social-buttons li.github a path, .social-buttons li.github a polygon {
         fill: #444444; }
@@ -835,6 +835,11 @@ section .content {
 
 .where {
   background-color: #082e3a; }
+
+.project ul h5 {
+  margin: 0; }
+.project ul p {
+  margin-top: 0; }
 
 .copyright {
   font-size: 0.8em; }

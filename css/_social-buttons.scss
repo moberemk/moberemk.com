@@ -84,7 +84,8 @@ $social-list: (
 
 			&.#{nth($s-name, 1)} {
 				a {
-					border: 0.1em solid nth($s-name, 2);
+					// border: 0.1em solid nth($s-name, 2);
+					border: none;
 					color: nth($s-name, 2);
 
 					path, polygon {

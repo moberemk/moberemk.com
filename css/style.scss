@@ -242,6 +242,17 @@ section .content {
 	background-color: $blue-dark;
 }
 
+.project {
+	ul {
+		h5 {
+			margin: 0;
+		}
+		p {
+			margin-top: 0;
+		}
+	}
+}
+
 .copyright {
 	font-size: 0.8em;
 }
