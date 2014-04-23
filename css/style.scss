@@ -1,21 +1,17 @@
 $sans-serif: 'PT Sans', sans-serif;
 $serif: 'PT Serif', serif;
 
-$blue-light: #5995A8;
-$blue-mid: #18508D;
-$blue-dark: #082E3A;
+// The mid colors are taken from the Skyset color theme by divinepillage
+// https://kuler.adobe.com/Skyset-color-theme-3755901/
 
-$yellow-light: #ffcb4d;
-$yellow-mid: #F5AF1A;
-$yellow-dark: #A67706;
+$blue-mid: #0F1C28;
+$blue-dark: darken($blue-mid, 5%);
 
-$red-light: #FF684D;
-$red-mid: #DD3C1F;
-$red-dark: #A6E106;
+$yellow-mid: #F3CF5B;
 
-$green-light: #43DF78;
-$green-mid: #2F990E;
-$green-dark: #047C2D;
+$red-mid: #F07444;
+
+$green-mid: #136972;
 
 $white: #FFFFFF;
 
@@ -175,9 +171,19 @@ header.page {
 	top: 0;
 	left: 0;
 	right: 0;
-	border-bottom: 1px solid $white;
+	z-index: 100;
+	// border-bottom: 1px solid $white;
 
 	background-color: $blue-mid;
+
+	text-transform: lowercase;
+
+	@media (max-width: 560px) {
+		font-size: 0.8em;
+	}
+	@media (max-width: 450px) {
+		font-size: 0.7em;
+	}
 }
 .navbar-list {
 	float: right;
@@ -190,7 +196,7 @@ header.page {
 		a {
 			display: inline-block;
 			padding: 0.75em 1.5em;
-			border-left: 1px solid $white;
+			// border-left: 1px solid $white;
 			border-bottom: none;
 		}
 	}
