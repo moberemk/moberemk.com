@@ -305,6 +305,12 @@
 
         // Remove the no-js class (no Modernizr required!)
         document.documentElement.classList.remove('no-js');
+
+        // Set each page to be at minimum viewport height to deal with Safari not liking vh units
+        var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        Array.prototype.forEach.call(document.querySelectorAll('.page'), function(el) {
+            el.style.minHeight = height + 'px';
+        });
     </script>
 </body>
 </html>

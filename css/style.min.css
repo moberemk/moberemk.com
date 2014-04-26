@@ -1,3 +1,7 @@
+/*!
+ * The mid colors are taken from the Skyset color theme by divinepillage
+ * https://kuler.adobe.com/Skyset-color-theme-3755901/
+ */
 .social-buttons:before, .skills:before, .navbar:before, .social-buttons:after, .skills:after, .navbar:after {
   content: " ";
   display: table; }
